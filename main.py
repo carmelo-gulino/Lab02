@@ -29,6 +29,7 @@ while(True):
             try:
                 if t.controllaParola(query):
                     traduzione = t.handleTranslate(query)
+                    print(traduzione)
             except KeyError:
                 print("Parola non trovata")
         elif int(txtIn) == 3:
@@ -52,5 +53,3 @@ while(True):
     except ValueError:
         print("Errore di input\n")
     c+=1
-
-
